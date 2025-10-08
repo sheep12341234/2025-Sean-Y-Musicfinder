@@ -1,0 +1,84 @@
+<div class = "green-box">
+  <a href = "/Home" class = "heading">Confirm</a>
+  <br>
+  <div class = "small">
+    <div class = "pfp">
+      <img class = "pic" src = "https://i.pinimg.com/236x/78/b5/48/78b548b33f3d83d4c682523194c9faac.jpg"/>
+    </div>
+  </div>
+  <br>
+  <br>
+  <div class = "large">
+    <input class = "textbox" placeholder = "name" type = "text"/>
+  <input class = "textbox" placeholder = "email" type = "text"/>
+    <input class = "textbox" placeholder = "age" type = "number"/>
+  </div>
+  <div class = "discbox">
+  </div>
+</div>
+
+<style>
+    .green-box{
+  height: 500px;
+  width: 300px;
+  background-color: lawngreen;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px auto;
+  flex-wrap: wrap;
+}
+
+.heading{
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.small{
+  border: 2px solid black;
+  height: 100px;
+  width: 250px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pfp{
+  height: 50px;
+  width: 50px;
+}
+
+.large{
+  height: 200px;
+  width: 250px;
+  border: 2px solid black;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  
+}
+
+.textbox{
+  width: 100px;
+  height: 35px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.pic{
+  border: 4px solid black;
+  border-radius: 15px;
+}
+
+.discbox{
+  font-size: 14px;
+  width: 275px;
+  display: flex;
+  justify-content: center;
+}
+</style>
