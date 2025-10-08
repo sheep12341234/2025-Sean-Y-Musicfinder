@@ -1,1 +1,3 @@
+type in terminal
+
 pnpm dev
