@@ -2,7 +2,7 @@
   <div class = "heading">Browse</div>
   <hr>
   <div class = "subheading">Relax!</div>
-  <p>Age group: 11-15</p>
+  <p>Age:</p>
   <br>
   <div class = "subclass-circular">Christian ^
     <div class = "drop">
