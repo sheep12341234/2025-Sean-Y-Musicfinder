@@ -1,5 +1,27 @@
+<script>
+	import { goto } from '$app/navigation';
+	import { redirect } from '@sveltejs/kit';
+
+	let name = $state('');
+	let email = $state('');
+	let age = $state(undefined);
+
+
+	function signUp() {
+		let user = {
+			name,
+			email,
+			age
+		};
+
+		localStorage.setItem('user', JSON.stringify(user));
+		goto('/Home');
+	}
+</script>
+
+
 <div class = "green-box">
-  <a href = "/Home" class = "heading">Confirm</a>
+  <button onclick={signUp} class="heading">Confirm</button>
   <br>
   <div class = "small">
     <div class = "pfp">
@@ -9,9 +31,9 @@
   <br>
   <br>
   <div class = "large">
-    <input class = "textbox" placeholder = "name" type = "text"/>
-  <input class = "textbox" placeholder = "email" type = "text"/>
-    <input class = "textbox" placeholder = "age" type = "number"/>
+    <input bind:value={name} class = "textbox" placeholder = "name" type = "text"/>
+  <input bind:value={email} class = "textbox" placeholder = "email" type = "text"/>
+    <input bind:value={age} class = "textbox" placeholder = "age" type = "number"/>
   </div>
   <div class = "discbox">
   </div>

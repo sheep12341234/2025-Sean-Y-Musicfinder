@@ -1,8 +1,22 @@
+<script>
+	import { onMount } from 'svelte';
+
+	let user = $state(undefined);
+
+	onMount(() => {
+		let u = localStorage.getItem('user');
+
+		if (u !== null) {
+			user = JSON.parse(u);
+		}
+	});
+</script>
+
 <div class="green-box">
 	<div class="heading">Browse</div>
 	<hr />
 	<div class="subheading">Relax!</div>
-	<p>Age:</p>
+	<p>Age:{user?.age}</p>
 	<br />
 	<div class="subclass-circular">
 		Christian ^
