@@ -1,10 +1,23 @@
 <script>
 	import { goto } from '$app/navigation';
 	import { redirect } from '@sveltejs/kit';
+  
+	import { onMount } from 'svelte';
 
+  let user = $state(undefined);
+  
 	let name = $state('');
 	let email = $state('');
 	let age = $state(undefined);
+
+	onMount(() => {
+		let u = localStorage.getItem('user');
+
+		if (u !== null) {
+			user = JSON.parse(u);
+      age = user.age;
+		}
+	});
 
 
 	function signUp() {
@@ -33,7 +46,7 @@
   <div class = "large">
     <input bind:value={name} class = "textbox" placeholder = "name" type = "text"/>
   <input bind:value={email} class = "textbox" placeholder = "email" type = "text"/>
-    <input bind:value={age} class = "textbox" placeholder = "age" type = "number"/>
+    <input bind:value={age} class = "textbox" placeholder = "{age? age : "age"}" type = "number" />
   </div>
   <div class = "discbox">
   </div>
