@@ -56,9 +56,13 @@
 		flex-wrap: wrap;
 	}
 
-	.heading {
+	.heading{
 		font-size: 50px;
 		font-weight: bold;
+	}
+
+  .heading:hover {
+		color: blue;
 	}
 
 	.small {

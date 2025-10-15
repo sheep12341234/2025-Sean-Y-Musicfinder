@@ -116,4 +116,7 @@
   display: flex;
   justify-content: center;
 }
+  .heading:hover {
+		color: blue;
+	}
 </style>

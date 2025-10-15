@@ -17,7 +17,7 @@
 	<hr />
 	<div class="subheading">Good Morning!</div>
 	<p>Age: {user?.age}</p>
-	<a href="/Contact">Contact me</a>
+	<a class = "cont" href="/Contact">Contact me</a>
 	<div class="subclass-circular">
 		Favorites ^
 		<div class="drop">
@@ -102,4 +102,14 @@
 	.circle:hover {
 		background-color: gray;
 	}
+
+  .cont{
+
+  }
+  .cont:hover{
+    color:blue;
+  }
+  .Back:hover{
+    color: blue;
+  }
 </style>
