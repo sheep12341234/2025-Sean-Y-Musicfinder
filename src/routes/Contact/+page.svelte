@@ -36,5 +36,13 @@
 
 	.text {
 		font-size: 24px;
+        width: 230px;
 	}
+
+    .textbox{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 </style>
