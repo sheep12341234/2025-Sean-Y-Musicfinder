@@ -54,7 +54,7 @@
 	.green-box {
 		height: 500px;
 		width: 300px;
-		background-color: lawngreen;
+		background-color: rgb(230, 245, 255);
 		border-radius: 30px;
 		display: flex;
 		flex-direction: column;
@@ -100,11 +100,12 @@
 	.circle {
 		height: 100px;
 		width: 100px;
-		background-color: pink;
+		background-color: rgb(230, 245, 255);
 		border-radius: 50px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		border: 5px solid black;
 	}
 
 	.circle:hover {

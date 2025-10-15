@@ -17,7 +17,7 @@
 	<hr />
 	<div class="subheading">Good Morning!</div>
 	<p>Age:  {user?.age}</p>
-	<a class = "cont" href="/Contact">Contact me</a>
+
 	<div class="subclass-circular">
 		Favorites ^
 		<div class="drop">
@@ -39,14 +39,17 @@
 	<br />
 	<a href="/Browse" class="circle">Browse</a>
 	<br />
+  <div class = "between">
+    <a class = "cont" href = "/Contact">Request Music</a>
 	<a href="/Edit" class="Back">(Edit information)</a>
+  </div>
 </div>
 
 <style>
 	.green-box {
 		height: 500px;
 		width: 300px;
-		background-color: lawngreen;
+    background-color: rgb(230, 245, 255);
 		border-radius: 30px;
 		display: flex;
 		flex-direction: column;
@@ -92,11 +95,12 @@
 	.circle {
 		height: 100px;
 		width: 100px;
-		background-color: rgb(255, 166, 0);
+		background-color: rgb(230, 245, 255);
 		border-radius: 50px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
+    border: 5px solid black;
 	}
 
 	.circle:hover {
@@ -111,5 +115,10 @@
   }
   .Back:hover{
     color: blue;
+  }
+  .between{
+    display:flex;
+    width: 300px;
+    justify-content: space-evenly;
   }
 </style>

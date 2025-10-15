@@ -46,7 +46,7 @@
 	.green-box {
 		height: 500px;
 		width: 300px;
-		background-color: lawngreen;
+		background-color: rgb(230, 245, 255);
 		border-radius: 30px;
 		display: flex;
 		flex-direction: column;
