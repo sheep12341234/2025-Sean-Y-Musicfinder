@@ -3,7 +3,7 @@
   <hr>
   <div class = "subheading">Good Morning!</div>
   <p>Age:</p>
-  <br>
+  <a href = "/Contact">Contact me</a>
   <div class = "subclass-circular">Favorites ^
     <div class = "drop">
       <a href = "https://www.youtube.com/watch?v=_hTsSthaI-4&list=RD_hTsSthaI-4&start_radio=1">Lay Down</a>
