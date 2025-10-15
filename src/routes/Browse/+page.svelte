@@ -16,7 +16,7 @@
 	<div class="heading">Browse</div>
 	<hr />
 	<div class="subheading">Relax!</div>
-	<p>Age:{user?.age}</p>
+	<p>Age: {user?.age}</p>
 	<br />
 	<div class="subclass-circular">
 		Christian ^

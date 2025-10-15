@@ -21,7 +21,6 @@
 
 <div class="green-box">
 	<button onclick={signUp} class="heading">Sign Up</button>
-	<div>{name}</div>
 	<br />
 	<div class="small">
 		<div class="pfp">

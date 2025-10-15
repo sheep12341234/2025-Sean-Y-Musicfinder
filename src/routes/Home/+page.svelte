@@ -16,7 +16,7 @@
 	<div class="heading">Home</div>
 	<hr />
 	<div class="subheading">Good Morning!</div>
-	<p>Age: {user?.age}</p>
+	<p>Age:  {user?.age}</p>
 	<a class = "cont" href="/Contact">Contact me</a>
 	<div class="subclass-circular">
 		Favorites ^
